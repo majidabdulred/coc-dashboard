@@ -26,5 +26,5 @@ df_wars = df_wars[["Name"]+list(column_names.values())]
 
 df_wars =df_wars.set_index("Name")
 
-with st.container(width=1000,height=500):
-    st.dataframe(data=df_wars,height="stretch")
+
+st.dataframe(data=df_wars,height="stretch")
