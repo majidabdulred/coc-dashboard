@@ -24,6 +24,7 @@ df_wars = df_wars.rename(columns=column_names)
 
 df_wars = df_wars[["Name"]+list(column_names.values())]
 
+df_wars =df_wars.set_index("Name")
 
-with st.container(width=1000,height=700):
+with st.container(width=1000,height=500):
     st.dataframe(data=df_wars,height="stretch")
